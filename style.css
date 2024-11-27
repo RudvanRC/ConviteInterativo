@@ -1,0 +1,228 @@
+/* Estilos Globais */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url(https://png.pngtree.com/background/20210715/original/pngtree-high-end-pink-watercolor-background-picture-image_1285765.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  background-size: cover;
+}
+
+h2 {
+  text-align: left;
+  color: rgb(57, 3, 34);
+  padding: 10px;
+}
+
+section {
+  color: rgb(57, 3, 34);
+  text-align: center;
+  h1{
+    margin-bottom: 20px;
+  }
+  h2{
+    text-align: center;
+  }
+}
+
+a {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: #f8a4e4;
+  font-size: 13px;
+  font-style: italic;
+  color: rgb(57, 3, 34);
+  padding: 10px;
+  margin-bottom: 40px;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-left: 5px;
+  padding-right: 10px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+/* Estilos gerais do formulário */
+form {
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid rgb(57, 3, 34);
+  border-radius: 10px;
+  background-color: transparent;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* Ajuste de rótulos e entrada */
+label {
+  display: flex;
+  margin-bottom: 5px;
+  font-size: 14px;
+  width: 100%;
+  align-items: center;
+  color: rgb(57, 3, 34);
+}
+
+.confirmacao-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 1px;
+  margin-left: 8px;
+  margin-bottom: 5px;
+  border: 1px solid rgb(57, 3, 34);
+  border-radius: 5px;
+  font-size: 15px;
+  text-align: center;
+  color: rgb(57, 3, 34);
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(57, 3, 34);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #dc8ad0;
+}
+
+main {
+  height: 100%;
+  min-height: calc(100vh - 60px);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.lista-presentes {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 100px;
+}
+
+.lista-presentes .coluna {
+  flex: 1 1 100%;
+  max-width: 100%;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background-color: transparent;
+  border: 0;
+}
+
+.lista-presentes a {
+  text-decoration: underline;
+  color: rgb(57, 3, 34);
+  display: inline-block;
+}
+
+.lista-presentes a:hover {
+  color: #f8a4e4;
+}
+.lista-presentes img { 
+  width: 24px; /* Define uma largura menor */
+  height: 24px; /* Define uma altura menor */
+  margin-right: 5px; /* Espaço entre a imagem e o texto do link */ 
+}
+
+/* Temporizador */
+#countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.circle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border: 2px solid rgb(57, 3, 34);
+  border-radius: 50%;
+  background-color: transparent;
+  transition: transform 0.3s;
+}
+
+.circle:hover {
+  transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+  background-color: transparent;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #ddd;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* Ajustes para dispositivos móveis */
+  .coluna {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para telas de celulares pequenos */
+  body {
+    padding: 10px;
+  }
+}
